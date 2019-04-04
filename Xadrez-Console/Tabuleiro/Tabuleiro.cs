@@ -12,5 +12,16 @@
             ColunasTabuleiro = colunasTabuleiro;
             pecas = new Peca[linhasTabuleiro, colunasTabuleiro];
         }
+
+        public Peca peca(int linha, int coluna)
+        {
+            return pecas[linha, coluna];
+        }
+
+        public void ColocarPeca(Peca peca, Posicao pos)
+        {
+            pecas[pos.Linha, pos.Coluna] = peca;
+            peca.Posicao = pos;
+        }
     }
 }
