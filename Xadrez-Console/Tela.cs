@@ -11,6 +11,7 @@ namespace Xadrez_Console
         {
             for(int i = 0; i < tabuleiro.ColunasTabuleiro; i++)
             {
+                Console.WriteLine();
                 for (int j = 0; j < tabuleiro.LinhasTabuleiro; j++)
                 {
                     if (tabuleiro.peca(i,j)==null)
