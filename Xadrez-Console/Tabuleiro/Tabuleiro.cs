@@ -18,7 +18,7 @@
             return pecas[linha, coluna];
         }
 
-        public Peca peca(Posicao pos)
+        public Peca pecaObjeto(Posicao pos)
         {
             return pecas[pos.Linha, pos.Coluna];
         }
@@ -39,7 +39,7 @@
         public bool existePeca(Posicao pos)
         {
             ValidarPosicao(pos);
-            return peca(pos) != null;
+            return pecaObjeto(pos) != null;
         }
 
         //Verificar se a posição é válida
